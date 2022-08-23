@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <section class="grid-container">
+      <div class="sidebar">
+        <div class="logo-section">
+          <svg style="width: 48px; height: 48px" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
+            />
+          </svg>
+          <h3 class="logo-text">Dashboard</h3>
+        </div>
+        <ul class="sidebar-links">
+          <li><i class="fa-solid fa-house"></i> <span>Home</span></li>
+          <li><i class="fa-solid fa-address-card"></i><span>Profile</span></li>
+          <li><i class="fa-solid fa-message"></i> <span>Messages</span></li>
+          <li><i class="fa-solid fa-clock"></i> <span>History</span></li>
+          <li><i class="fa-solid fa-list-check"></i> <span>Tasks</span></li>
+          <li>
+            <i class="fa-solid fa-user-group"></i><span>Communities</span>
+          </li>
+          <li><i class="fa-solid fa-gear"></i> <span>Settings</span></li>
+          <li>
+            <i class="fa-solid fa-circle-question"></i> <span>Support</span>
+          </li>
+          <li><i class="fa-solid fa-shield"></i> <span>Privacy</span></li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <nav class="navbar">
+          <div class="row-top">
+            <div class="search-bar">
+              <label for="search"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></label>
+              <input type="text" id="search" />
+            </div>
+            <div class="name-group">
+              <i class="fa-solid fa-bell"></i>
+              <img
+                src="./img/user-icon.png"
+                alt="Batman User Icon"
+                class="user-icon"
+              />
+              <h4>SpectreFury</h4>
+            </div>
+          </div>
+          <div class="row-bottom">
+            <div class="row-bottom-left">
+              <img src="./img/user-icon.png" alt="" />
+              <p><span class="text-sm">Hi there,</span><br> Morgan Oakley (@morgan)</p>
+            </div>
+            <div class="row-bottom-right">
+              <button type="button">New</button>
+              <button type="button">Upload</button>
+              <button type="button">Share</button>
+            </div>
+          </div>
+        </nav>
+        <div class="hero"></div>
+      </div>
+    </section>
+  </body>
+</html>

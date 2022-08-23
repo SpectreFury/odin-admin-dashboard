@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  height: 100;
+  min-height: 100vh;
+}
+
+.grid-container .sidebar {
+  background-color: #0070f8;
+  padding: 1rem;
+}
+
+/* Sidebar */
+
+.sidebar .logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar .logo-section svg {
+  color: #fff;
+}
+
+.sidebar .logo-section h3 {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.sidebar .sidebar-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+
+.sidebar .sidebar-links li {
+  font-size: 1.2rem;
+  padding: 15px 0;
+}
+
+.sidebar .sidebar-links li:nth-of-type(7) {
+  margin-top: 40px;
+}
+
+.sidebar .sidebar-links li span {
+  margin-left: 1.5rem;
+}
+
+/* Main Content */
+
+.main-content {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar .row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.navbar .row-top .search-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .row-top .search-bar input {
+  margin-left: 2rem;
+  padding: 10px 10px;
+  width: 60%;
+  border: none;
+  background-color: #e2e8f0;
+  border-radius: 20px;
+}
+
+.navbar .row-top .search-bar i {
+  font-size: 1.5rem;
+}
+
+.navbar .row-top .name-group {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .row-top .name-group * {
+  margin-right: 2rem;
+}
+
+.navbar .row-top .name-group h4 {
+  font-size: 20px;
+}
+
+.navbar .row-top .name-group i {
+  font-size: 1.5rem;
+}
+
+.navbar .row-top .name-group img {
+  width: 48px;
+  height: auto;
+}
+
+/* Row Bottom */
+
+.row-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 40px;
+  background-color: #1992d4;
+  border-radius: 36px;
+  margin-right: 2rem;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.row-bottom .row-bottom-left {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.row-bottom .row-bottom-left img {
+  width: 75px;
+  height: auto;
+}
+
+.row-bottom .row-bottom-left p {
+  margin-left: 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.hero {
+  background-color: #e2e8f0;
+}
+
+/* Utility Classes */
+
+.text-sm {
+  font-size: 14px;
+}

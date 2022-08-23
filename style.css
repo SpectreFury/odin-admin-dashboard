@@ -193,6 +193,7 @@ button:hover {
 
 .card-container .card {
     max-width: 550px;
+    width: 90%;
     padding: 20px 0;
     position: relative;
     padding: 30px 20px;
